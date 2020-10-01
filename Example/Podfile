@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BehaviourAnalyzer_Example' do
+  pod 'BehaviourAnalyzer', :path => '../'
+
+  target 'BehaviourAnalyzer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
