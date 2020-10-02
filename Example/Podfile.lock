@@ -1,0 +1,16 @@
+PODS:
+  - BehaviourAnalyzer (0.1.0)
+
+DEPENDENCIES:
+  - BehaviourAnalyzer (from `../`)
+
+EXTERNAL SOURCES:
+  BehaviourAnalyzer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BehaviourAnalyzer: 1c96107e8381575d89779479b5bb286c83c38801
+
+PODFILE CHECKSUM: 36035632217cbab8d87ce2d2a4c5e477e0896360
+
+COCOAPODS: 1.9.3
