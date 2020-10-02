@@ -22,7 +22,7 @@ pod 'BehaviourAnalyzer'
 
 ## Author
 
-DeepikaRamesh1510, deepika.ram@anywhere.co
+[Deepika Ramesh](https://github.com/DeepikaRamesh1510)
 
 ## License
 
