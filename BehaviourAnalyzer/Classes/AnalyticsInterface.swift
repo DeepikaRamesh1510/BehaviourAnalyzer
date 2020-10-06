@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum Analytics {
+public enum AnalyticsLogger {
     
     private static var providers: [AnalyticsProvider] = []
     

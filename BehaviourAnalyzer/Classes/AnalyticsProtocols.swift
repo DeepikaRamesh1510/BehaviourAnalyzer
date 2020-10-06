@@ -7,8 +7,8 @@
 
 import Foundation
 
-public typealias AnalyticsParameters = [AnyHashable: Any]
-public typealias AnalyticsUserProperties = [AnyHashable: String]
+public typealias AnalyticsParameters = [String: Any]
+public typealias AnalyticsUserProperties = [String: String]
 
 public protocol AnalyticsEvent {
     var name: String { get }
@@ -25,9 +25,9 @@ public protocol AnalyticsProvider {
     var name: String { get }
     
     func trackEvent(_ event: AnalyticsEvent,
-                  parameters: [AnyHashable: Any],
-                  userProperties: [AnyHashable: String])
+                  parameters: [String: Any],
+                  userProperties: [String: String])
     
-    func trackScreen(withName screenName: String, parameters: [AnyHashable : Any])
+    func trackScreen(withName screenName: String, parameters: [String : Any])
     func setUserId(_ userId: String)
 }
