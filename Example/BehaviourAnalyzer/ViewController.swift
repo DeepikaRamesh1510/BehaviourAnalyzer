@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BehaviourAnalyzer
 
 class ViewController: UIViewController {
 
@@ -20,5 +21,33 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func didTapButton(_ sender: Any) {
+        AnalyticsLogger.trackEvent(ViewControllerEvents.buttonTap)
+    }
+    
 }
 
+enum ViewControllerEvents: AnalyticsEvent {
+    case buttonTap
+    
+    var name: String {
+        switch self {
+        case .buttonTap:
+            return "Button_Tap"
+        }
+    }
+    
+    var parameters: AnalyticsParameters {
+        switch self {
+        default:
+            return [:]
+        }
+    }
+    
+    var userProperties: AnalyticsUserProperties {
+        switch self {
+        default:
+            return [:]
+        }
+    }
+}
